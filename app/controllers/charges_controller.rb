@@ -1,4 +1,6 @@
 class ChargesController < ActionController::Base
+  layout 'application'
+
   def create
     # Amount in cents
     @amount = 500
