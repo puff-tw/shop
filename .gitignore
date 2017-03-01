@@ -88,6 +88,6 @@ rerun.txt
 pickle-email-*.html
 .zeus.sock
 
-# Ignore application configuration
+# Ignore application configuration (add by figaro)
 /config/application.yml
 

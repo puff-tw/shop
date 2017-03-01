@@ -14,8 +14,11 @@ ruby '2.4.0'
 # add bootstrap
 gem 'bootstrap-sass'
 
-# stripe
+# stripe for taking payments
 gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
+
+# Figaro to securely configure App
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
