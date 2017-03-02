@@ -3,7 +3,6 @@ class ChargesController < ActionController::Base
 
   def create
     # Amount in cents
-    @amount = 500
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
@@ -12,7 +11,7 @@ class ChargesController < ActionController::Base
 
     charge = Stripe::Charge.create(
       :customer    => customer.id,
-      :amount      => @amount,
+      :amount      =>  params[:amount],
       :description => 'Rails Stripe customer',
       :currency    => 'usd'
     )
