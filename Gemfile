@@ -8,6 +8,8 @@ end
 # version of ruby
 ruby '2.4.0'
 
+gem "rails-i18n"
+
 # rails_12factor for heroku
 # gem 'rails_12factor', group: :production
 
