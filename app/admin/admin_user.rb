@@ -1,5 +1,6 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
+  menu label: proc{ I18n.t "active_admin.menu.admin_users" }
 
   index do
     selectable_column

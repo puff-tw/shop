@@ -1,4 +1,6 @@
 ActiveAdmin.register Product do
+  menu label: proc{ I18n.t "active_admin.menu.products" }
+
   before_filter do
     Product.class_eval do
       def to_param
@@ -6,6 +8,8 @@ ActiveAdmin.register Product do
       end
     end
   end
+
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

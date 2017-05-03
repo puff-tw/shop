@@ -1,4 +1,6 @@
 ActiveAdmin.register Purchase do
+  menu label: proc{ I18n.t "active_admin.menu.purchases" }
+
   before_filter do
     Purchase.class_eval do
       def to_param

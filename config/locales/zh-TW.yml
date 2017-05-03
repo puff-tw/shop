@@ -3,6 +3,11 @@
     formats:
       long: "%Y/%m/%d %H:%M:%S"
   active_admin:
+    menu:
+      gohome: "返回首頁"
+      admin_users: "管理者"
+      products: "產品"
+      purchases: "訂單"
     dashboard: 儀表板
     dashboard_welcome:
       welcome: "歡迎來到管理者後台，這是預設的儀表板頁面。"
