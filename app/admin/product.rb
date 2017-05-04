@@ -1,7 +1,7 @@
 ActiveAdmin.register Product do
   menu label: proc{ I18n.t "active_admin.menu.products" }
 
-  before_filter do
+  before_action do
     Product.class_eval do
       def to_param
         id.to_s
